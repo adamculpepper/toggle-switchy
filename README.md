@@ -1,8 +1,8 @@
-# Moo Switch
-A CSS only toggle switch for form input checkboxes
+# Moo Toggle
+A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
 
 ### CSS
-<link rel="stylesheet" media="screen" href="/assets/css/moo-switch.css">
+<link rel="stylesheet" media="screen" href="/assets/css/moo-toggle.css">
 
 ### HTML
 ```
