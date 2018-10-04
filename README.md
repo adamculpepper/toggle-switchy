@@ -1,8 +1,10 @@
-# moo-switch
-CSS Only Toggle Switch
+# Moo Switch
+A CSS only toggle switch for form input checkboxes
 
-HTML:
+### CSS
+<link rel="stylesheet" media="screen" href="/assets/css/moo-switch.css">
 
+### HTML
 ```
 <div class="moo-switch">
 	<input type="checkbox" class="moo-switch-input" id="example_1">
