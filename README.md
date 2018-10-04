@@ -6,10 +6,10 @@ A CSS only toggle switch for form input checkboxes
 
 ### HTML
 ```
-<div class="moo-switch">
-	<input type="checkbox" class="moo-switch-input" id="example_1">
-	<label for="example_1" class="moo-switch-btn">
-		<span class="moo-switch-toggle"></span>
+<div class="moo-toggle">
+	<input checked type="checkbox" class="moo-toggle-input" id="example_1">
+	<label for="example_1" class="moo-toggle-btn">
+		<span class="moo-toggle-switch"></span>
 	</label>
 </div>
 ```
