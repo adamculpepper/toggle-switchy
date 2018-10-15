@@ -14,6 +14,6 @@ A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
 </div>
 ```
 #### Todo
-- slide animation for the toggle switch
-- fade the On/Off label in and out when clicked
-- add disable functionality
+* ~~slide animation for the toggle switch~~
+* ~~fade the On/Off label in and out when clicked~~
+* add disable functionality
