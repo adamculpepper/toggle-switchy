@@ -2,7 +2,7 @@
 A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
 
 ### CSS
-<link rel="stylesheet" media="screen" href="/assets/css/moo-toggle.css">
+```<link rel="stylesheet" media="screen" href="/assets/css/moo-toggle.css">```
 
 ### HTML
 ```
@@ -13,3 +13,7 @@ A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
 	</label>
 </div>
 ```
+#### Todo
+- slide animation for the toggle switch
+- fade the On/Off label in and out when clicked
+- add disable functionality
