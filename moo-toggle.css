@@ -44,6 +44,9 @@ https://github.com/adamculpepper/moo-toggle
 
 .moo-toggle input:checked + label .moo-toggle-switch {/*background:red;*/ /*border-radius:4px 0 0 4px;*/ margin-left:50px;}
 
+/* DISABLED */
+.moo-toggle input[disabled] + label {opacity:0.5;}
+
 /* LABELS */
 .moo-toggle input + label:before,
 .moo-toggle input + label:after {display:block; position:absolute; z-index:2;}
