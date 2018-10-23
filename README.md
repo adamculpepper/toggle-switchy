@@ -1,5 +1,5 @@
 # Toggle Switchy
-A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
+A CSS only toggle switch for form input radios (not Bootstrap dependent)
 
 ### CSS
 ```<link rel="stylesheet" media="screen" href="/assets/css/toggle-switchy.css">```
@@ -17,3 +17,5 @@ A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
 * ~~slide animation for the toggle switch~~
 * ~~fade the On/Off label in and out when clicked~~
 * ~~add disable functionality~~
+
+#### See also [Toggle Radios](https://github.com/adamculpepper/toggle-radios) - A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
