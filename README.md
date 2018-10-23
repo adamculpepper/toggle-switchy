@@ -7,9 +7,9 @@ A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
 ### HTML
 ```
 <div class="toggle-switchy">
-	<input checked type="checkbox" class="toggle-input" id="example_1">
-	<label for="example_1" class="toggle-btn">
-		<span class="toggle-switch"></span>
+	<input checked type="checkbox" id="example_1">
+	<label for="example_1">
+		<span class="toggle"></span>
 	</label>
 </div>
 ```
