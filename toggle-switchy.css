@@ -1,20 +1,20 @@
 /*
 Toggle Switchy
-Version: 1.0
+Version: 1.1
 Adam Culpepper
 https://github.com/adamculpepper/toggle-switchy
 */
 
 /* CORE ------------------------------------------------------------ */
-.toggle-switchy {display:inline-block; overflow:hidden; width:70px; background:#ced4da; border:1px solid rgba(0, 0, 0, 0.1); border-radius:4px; position:relative;}
-.toggle-switchy input[type=checkbox] {display:none;}
-.toggle-switchy label {display:block; width:100%; height:30px; line-height:30px; margin:0; cursor:pointer;
-/*	background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(230,230,230,0.28) 20%, rgba(230,230,230,1) 100%);
+.toggle-switchy {display:inline-block; overflow:hidden; background:#ced4da; border:1px solid rgba(0, 0, 0, 0.1); border-radius:4px; position:relative;}
+.toggle-switchy input {display:none;}
+.toggle-switchy label {display:block; width:100%; margin:0; color:#777; cursor:pointer;
+	/*background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(230,230,230,0.28) 20%, rgba(230,230,230,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.1) 0%,rgba(230,230,230,0.28) 20%,rgba(230,230,230,1) 100%);
 	background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(230,230,230,0.28) 20%,rgba(230,230,230,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#e6e6e6',GradientType=0 );*/
 }
-.toggle-switchy .toggle {
+.toggle-switchy label .toggle {
 	content:'';
 	display:block;
 	height:100%;
@@ -26,17 +26,9 @@ https://github.com/adamculpepper/toggle-switchy
 	border-radius:4px;
 	/*border-radius:0 4px 4px 0;*/
 	/*border:1px solid #adadad;*/
+	transition:all 200ms linear;
 }
-
-.toggle-switchy label,
-.toggle-switchy input + label:before,
-.toggle-switchy input + label:after,
-.toggle-switchy .toggle {transition:all 200ms linear;}
-/* CORE ------------------------------------------------------------ */
-
-
-/* CHECKED */
-.toggle-switchy input:checked + label .toggle {margin-left:50px;}
+.toggle-switchy input:checked + label {background:lightgreen;}
 
 /* DISABLED */
 .toggle-switchy input[disabled] + label {opacity:0.5;}
@@ -44,16 +36,67 @@ https://github.com/adamculpepper/toggle-switchy
 /* LABELS */
 .toggle-switchy input + label:before,
 .toggle-switchy input + label:after {display:block; position:absolute; z-index:2;}
-.toggle-switchy input + label:before {content:'ON'; left:10px;}
-.toggle-switchy input + label:after {content:'OFF'; right:10px;}
+.toggle-switchy input + label:before {content:'ON';}
+.toggle-switchy input + label:after {content:'OFF';}
 
 /* SHOW/HIDE */
 .toggle-switchy input + label:before {opacity:0;}
 .toggle-switchy input:checked + label:before {opacity:1;}
 .toggle-switchy input:checked + label:after {opacity:0;}
+/* CORE ------------------------------------------------------------ */
 
-/* CUSTOMIZATIONS */
-.toggle-switchy {width:70px;}
-.toggle-switchy .toggle {width:20px;}
-.toggle-switchy input:checked + label .toggle {margin-left:50px;} /* .toggle-switchy width minus .toggle width */
-.toggle-switchy input:checked + label {background:lightgreen;}
+
+/* Size: LG */
+.toggle-switchy[data-size='lg'] {width:70px;}
+.toggle-switchy[data-size='lg'] .toggle {width:20px;}
+.toggle-switchy[data-size='lg'] label {height:30px; line-height:30px;}
+.toggle-switchy[data-size='lg'] input + label:before,
+.toggle-switchy[data-size='lg'] input + label:after {font-size:16px;}
+.toggle-switchy[data-size='lg'] input + label:before {left:11px;}
+.toggle-switchy[data-size='lg'] input + label:after {right:9px;}
+.toggle-switchy[data-size='lg'] input:checked + label .toggle {margin-left:48px;}
+
+
+/* Size: Normal */
+.toggle-switchy {width:65px;}
+.toggle-switchy .toggle {width:17px;}
+.toggle-switchy label {height:25px; line-height:25px;}
+.toggle-switchy input + label:before,
+.toggle-switchy input + label:after {font-size:14px;}
+.toggle-switchy input + label:before {left:12px;}
+.toggle-switchy input + label:after {right:12px;}
+.toggle-switchy input:checked + label .toggle {margin-left:46px;}
+
+
+/* Size: SM */
+.toggle-switchy[data-size='sm'] {width:55px;}
+.toggle-switchy[data-size='sm'] .toggle {width:15px;}
+.toggle-switchy[data-size='sm'] label {height:20px; line-height:20px;}
+.toggle-switchy[data-size='sm'] input + label:before,
+.toggle-switchy[data-size='sm'] input + label:after {font-size:12px;}
+.toggle-switchy[data-size='sm'] input + label:before {left:9px;}
+.toggle-switchy[data-size='sm'] input + label:after {right:9px;}
+.toggle-switchy[data-size='sm'] input:checked + label .toggle {margin-left:38px;}
+
+
+/* Size: XS */
+.toggle-switchy[data-size='xs'] {width:45px;}
+.toggle-switchy[data-size='xs'] .toggle {width:15px;}
+.toggle-switchy[data-size='xs'] label {height:15px; line-height:15px;}
+.toggle-switchy[data-size='xs'] input + label:before,
+.toggle-switchy[data-size='xs'] input + label:after {font-size:10px;}
+.toggle-switchy[data-size='xs'] input + label:before {left:6px;}
+.toggle-switchy[data-size='xs'] input + label:after {right:6px;}
+.toggle-switchy[data-size='xs'] input:checked + label .toggle {margin-left:28px;}
+
+
+/* Style: Rounded */
+.toggle-switchy[data-style='rounded'] {border-radius:50px;}
+.toggle-switchy[data-style='rounded'] .toggle {border-radius:50px;}
+
+
+/* Text: Off */
+.toggle-switchy[data-text='false'] input + label:before,
+.toggle-switchy[data-text='false'] input + label:after {content:'';}
+.toggle-switchy[data-text='false'][data-size='xs'] {width:35px;}
+.toggle-switchy[data-text='false'][data-size='xs'] input:checked + label .toggle {margin-left:18px;}
