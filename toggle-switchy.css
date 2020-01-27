@@ -1,5 +1,5 @@
 /*
-Toggle Switchy v1.5
+Toggle Switchy v1.6
 by Adam Culpepper | @adamculpepper
 https://github.com/adamculpepper/toggle-switchy
 */
@@ -9,8 +9,8 @@ https://github.com/adamculpepper/toggle-switchy
 /*Colors: Default (blue) */
 .toggle-switchy input + label {color:#fff;}
 .toggle-switchy input + label .toggle {background:#fff;}
-.toggle-switchy input + label:before {content:'ON'; right:55%;}
-.toggle-switchy input + label:after {content:'OFF'; left:55%;}
+.toggle-switchy input + label:before {content:'ON';}
+.toggle-switchy input + label:after {content:'OFF';}
 .toggle-switchy input:checked + label {background:#3498db;}
 .toggle-switchy input:not(:checked) + label {background:#ccc;}
 .toggle-switchy input:checked + label .toggle {border:3px solid #3498db;}
@@ -31,7 +31,7 @@ CORE STYLES BELOW - NO TOUCHY
 /* LABELS */
 .toggle-switchy input + label:before,
 .toggle-switchy input + label:after {display:flex; align-items:center; position:absolute; z-index:2; height:100%;}
-.toggle-switchy input + label:before {right:50%;}
+.toggle-switchy input + label:before {right:55%;}
 .toggle-switchy input + label:after {left:50%;}
 .toggle-switchy input + label:hover {cursor:pointer;}
 
@@ -50,35 +50,35 @@ CORE STYLES ABOVE - NO TOUCHY
 ////////////////////////// */
 
 /* Size: Extra Large */
-.toggle-switchy[data-size='xl']										{width:90px; height:40px;}
+.toggle-switchy[data-size='xl']										{width:85px; height:40px;}
 .toggle-switchy[data-size='xl'] .toggle								{width:40px;}
 .toggle-switchy[data-size='xl'] input + label:before,
 .toggle-switchy[data-size='xl'] input + label:after					{font-size:1.2rem;}
 .toggle-switchy[data-size='xl'] input:not(:checked) + label .toggle	{right:calc(100% - 40px);}
 
 /* Size: Large */
-.toggle-switchy[data-size='lg']										{width:80px; height:35px;}
+.toggle-switchy[data-size='lg']										{width:75px; height:35px;}
 .toggle-switchy[data-size='lg'] .toggle								{width:35px;}
 .toggle-switchy[data-size='lg'] input + label:before,
 .toggle-switchy[data-size='lg'] input + label:after					{font-size:1rem;}
 .toggle-switchy[data-size='lg'] input:not(:checked) + label .toggle	{right:calc(100% - 35px);}
 
 /* Size: Default (medium) */
-.toggle-switchy														{width:70px; height:30px;}
+.toggle-switchy														{width:65px; height:30px;}
 .toggle-switchy .toggle												{width:30px;}
 .toggle-switchy input + label:before,
 .toggle-switchy input + label:after									{font-size:0.8rem;}
 .toggle-switchy input:not(:checked) + label .toggle					{right:calc(100% - 30px);}
 
 /* Size: Small */
-.toggle-switchy[data-size='sm']										{width:60px; height:25px;}
+.toggle-switchy[data-size='sm']										{width:55px; height:25px;}
 .toggle-switchy[data-size='sm'] .toggle								{width:25px;}
 .toggle-switchy[data-size='sm'] input + label:before,
 .toggle-switchy[data-size='sm'] input + label:after					{font-size:0.7rem;}
 .toggle-switchy[data-size='sm'] input:not(:checked) + label .toggle	{right:calc(100% - 25px);}
 
 /* Size: Extra Small */
-.toggle-switchy[data-size='xs']										{width:50px; height:20px;}
+.toggle-switchy[data-size='xs']										{width:45px; height:20px;}
 .toggle-switchy[data-size='xs'] .toggle								{width:20px;}
 .toggle-switchy[data-size='xs'] input + label:before,
 .toggle-switchy[data-size='xs'] input + label:after					{font-size:0.5rem;}
@@ -87,6 +87,9 @@ CORE STYLES ABOVE - NO TOUCHY
 /* Style: Rounded */
 .toggle-switchy[data-style='rounded'],
 .toggle-switchy[data-style='rounded'] input + label .toggle			{border-radius:50px;}
+
+.toggle-switchy[data-style='rounded'] input + label:before {right:50%;}
+.toggle-switchy[data-style='rounded'] input + label:after {left:50%;}
 
 /* Text: Off */
 .toggle-switchy[data-text='false'] input + label:before,
