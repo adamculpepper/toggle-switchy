@@ -12,8 +12,8 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 ### HTML
 ```
 <div class="toggle-switchy">
-	<input checked type="checkbox" id="example_1">
-	<label for="example_1">
+	<input checked type="checkbox" id="ID_HERE">
+	<label for="ID_HERE">
 		<span class="toggle"></span>
 	</label>
 </div>
