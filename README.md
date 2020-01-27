@@ -19,7 +19,7 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 </div>
 ```
 
-### Options
+## Options
 
 | Option | Attribute |
 | ------ | ------ |
