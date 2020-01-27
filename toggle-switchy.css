@@ -1,102 +1,118 @@
 /*
-Toggle Switchy
-Version: 1.1
-Adam Culpepper
+Toggle Switchy v1.2
+by Adam Culpepper | @adamculpepper
 https://github.com/adamculpepper/toggle-switchy
 */
 
-/* CORE ------------------------------------------------------------ */
-.toggle-switchy {display:inline-block; overflow:hidden; background:#ced4da; border:1px solid rgba(0, 0, 0, 0.1); border-radius:4px; position:relative;}
-.toggle-switchy input {display:none;}
-.toggle-switchy label {display:block; width:100%; margin:0; color:#777; cursor:pointer;
-	/*background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(230,230,230,0.28) 20%, rgba(230,230,230,1) 100%);
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.1) 0%,rgba(230,230,230,0.28) 20%,rgba(230,230,230,1) 100%);
-	background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(230,230,230,0.28) 20%,rgba(230,230,230,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#e6e6e6',GradientType=0 );*/
-}
-.toggle-switchy label .toggle {
-	content:'';
-	display:block;
-	height:100%;
-	background:#fff;
-	/*background:rgba(255, 0, 255, 0.5);*/
-	position:absolute;
-	z-index:3;
-	margin-left:0;
-	border-radius:4px;
-	/*border-radius:0 4px 4px 0;*/
-	/*border:1px solid #adadad;*/
-	transition:all 200ms linear;
-}
-.toggle-switchy input:checked + label {background:lightgreen;}
+/* Customizable styles */
 
-/* DISABLED */
+/*Colors: Default (blue) */
+.toggle-switchy input + label {color:#fff;}
+.toggle-switchy input + label .toggle {background:#fff;}
+.toggle-switchy input + label:before {content:'ON'; left:55%;}
+.toggle-switchy input + label:after {content:'OFF'; right:55%;}
+.toggle-switchy input:checked + label {background:#3498db;}
+.toggle-switchy input:not(:checked) + label {background:#ccc;}
+.toggle-switchy[data-style='rounded'] input:checked + label .toggle	{border:3px solid #3498db;}
+.toggle-switchy[data-style='rounded'] input:not(:checked) + label .toggle {border:3px solid #ccc;}
+
+/* Rounded switch corners */
+.toggle-switchy input + label .toggle {border-radius:4px 0 0 4px;}
+.toggle-switchy input:checked + label .toggle {border-radius:0 4px 4px 0;}
+
+/* //////////////////////////
+CORE STYLES BELOW - NO TOUCHY
+////////////////////////// */
+.toggle-switchy {display:inline-block; overflow:hidden; border-radius:3px; position:relative;}
+.toggle-switchy * {transition:all 200ms linear;}
+.toggle-switchy input {display:none;}
 .toggle-switchy input[disabled] + label {opacity:0.5;}
+.toggle-switchy input + label {display:block; width:100%; height:100%; margin:0; cursor:pointer;}
+.toggle-switchy input + label .toggle {content:''; display:block; height:100%; position:absolute; left:0; z-index:3;}
 
 /* LABELS */
 .toggle-switchy input + label:before,
-.toggle-switchy input + label:after {display:block; position:absolute; z-index:2;}
-.toggle-switchy input + label:before {content:'ON';}
-.toggle-switchy input + label:after {content:'OFF';}
+.toggle-switchy input + label:after {display:flex; align-items:center; position:absolute; z-index:2; height:100%; transition:all 200ms linear;}
+.toggle-switchy input + label:before {left:55%;}
+.toggle-switchy input + label:after {right:55%;}
+.toggle-switchy input + label:hover {cursor:pointer;}
 
 /* SHOW/HIDE */
 .toggle-switchy input + label:before {opacity:0;}
 .toggle-switchy input:checked + label:before {opacity:1;}
 .toggle-switchy input:checked + label:after {opacity:0;}
-/* CORE ------------------------------------------------------------ */
+/* //////////////////////////
+CORE STYLES ABOVE - NO TOUCHY
+////////////////////////// */
 
 
-/* Size: LG */
-.toggle-switchy[data-size='lg'] {width:70px;}
-.toggle-switchy[data-size='lg'] .toggle {width:20px;}
-.toggle-switchy[data-size='lg'] label {height:30px; line-height:30px;}
+/* Size: Large */
+.toggle-switchy[data-size='lg']										{width:90px; height:40px;}
+.toggle-switchy[data-size='lg'] .toggle								{width:40px;}
 .toggle-switchy[data-size='lg'] input + label:before,
-.toggle-switchy[data-size='lg'] input + label:after {font-size:16px;}
-.toggle-switchy[data-size='lg'] input + label:before {left:11px;}
-.toggle-switchy[data-size='lg'] input + label:after {right:9px;}
-.toggle-switchy[data-size='lg'] input:checked + label .toggle {margin-left:48px;}
-
+.toggle-switchy[data-size='lg'] input + label:after					{font-size:1.2rem;}
+.toggle-switchy[data-size='lg'] input:not(:checked) + label .toggle	{left:calc(100% - 40px);}
 
 /* Size: Normal */
-.toggle-switchy {width:65px;}
-.toggle-switchy .toggle {width:17px;}
-.toggle-switchy label {height:25px; line-height:25px;}
+.toggle-switchy														{width:80px; height:35px;}
+.toggle-switchy .toggle												{width:35px;}
 .toggle-switchy input + label:before,
-.toggle-switchy input + label:after {font-size:14px;}
-.toggle-switchy input + label:before {left:12px;}
-.toggle-switchy input + label:after {right:12px;}
-.toggle-switchy input:checked + label .toggle {margin-left:46px;}
+.toggle-switchy input + label:after									{font-size:1rem;}
+.toggle-switchy input:not(:checked) + label .toggle					{left:calc(100% - 35px);}
 
-
-/* Size: SM */
-.toggle-switchy[data-size='sm'] {width:55px;}
-.toggle-switchy[data-size='sm'] .toggle {width:15px;}
-.toggle-switchy[data-size='sm'] label {height:20px; line-height:20px;}
+/* Size: Small */
+.toggle-switchy[data-size='sm']										{width:70px; height:30px;}
+.toggle-switchy[data-size='sm'] .toggle								{width:30px;}
 .toggle-switchy[data-size='sm'] input + label:before,
-.toggle-switchy[data-size='sm'] input + label:after {font-size:12px;}
-.toggle-switchy[data-size='sm'] input + label:before {left:9px;}
-.toggle-switchy[data-size='sm'] input + label:after {right:9px;}
-.toggle-switchy[data-size='sm'] input:checked + label .toggle {margin-left:38px;}
+.toggle-switchy[data-size='sm'] input + label:after					{font-size:0.8rem;}
+.toggle-switchy[data-size='sm'] input:not(:checked) + label .toggle	{left:calc(100% - 30px);}
 
-
-/* Size: XS */
-.toggle-switchy[data-size='xs'] {width:45px;}
-.toggle-switchy[data-size='xs'] .toggle {width:15px;}
-.toggle-switchy[data-size='xs'] label {height:15px; line-height:15px;}
+/* Size: Extra Small */
+.toggle-switchy[data-size='xs']										{width:60px; height:25px;}
+.toggle-switchy[data-size='xs'] .toggle								{width:25px;}
 .toggle-switchy[data-size='xs'] input + label:before,
-.toggle-switchy[data-size='xs'] input + label:after {font-size:10px;}
-.toggle-switchy[data-size='xs'] input + label:before {left:6px;}
-.toggle-switchy[data-size='xs'] input + label:after {right:6px;}
-.toggle-switchy[data-size='xs'] input:checked + label .toggle {margin-left:28px;}
-
+.toggle-switchy[data-size='xs'] input + label:after					{font-size:0.7rem;}
+.toggle-switchy[data-size='xs'] input:not(:checked) + label .toggle	{left:calc(100% - 25px);}
 
 /* Style: Rounded */
-.toggle-switchy[data-style='rounded'] {border-radius:50px;}
-.toggle-switchy[data-style='rounded'] .toggle {border-radius:50px;}
-
+.toggle-switchy[data-style='rounded'],
+.toggle-switchy[data-style='rounded'] input + label .toggle			{border-radius:50px;}
+.toggle-switchy[data-style='rounded'] input + label:before			{left:50%;}
+.toggle-switchy[data-style='rounded'] input + label:after			{right:50%;}
 
 /* Text: Off */
 .toggle-switchy[data-text='false'] input + label:before,
-.toggle-switchy[data-text='false'] input + label:after {content:'';}
-.toggle-switchy[data-text='false'][data-size='xs'] {width:35px;}
-.toggle-switchy[data-text='false'][data-size='xs'] input:checked + label .toggle {margin-left:18px;}
+.toggle-switchy[data-text='false'] input + label:after				{content:'';}
+
+.toggle-switchy[data-text='false'][data-size='lg']					{width:80px;}
+.toggle-switchy[data-text='false']									{width:70px;}
+.toggle-switchy[data-text='false'][data-size='sm']					{width:60px;}
+.toggle-switchy[data-text='false'][data-size='xs']					{width:50px;}
+
+/* Color: Red */
+.toggle-switchy[data-color='red'] input:checked + label {background:#e74c3c;}
+.toggle-switchy[data-color='red'][data-style='rounded'] input:checked + label .toggle {border-color:#e74c3c;}
+
+/* Color: Orange */
+.toggle-switchy[data-color='orange'] input:checked + label {background:#e67e22;}
+.toggle-switchy[data-color='orange'][data-style='rounded'] input:checked + label .toggle {border-color:#e67e22;}
+ 
+ /* Color: Yellow */
+.toggle-switchy[data-color='yellow'] input:checked + label {background:#f1c40f;}
+.toggle-switchy[data-color='yellow'][data-style='rounded'] input:checked + label .toggle {border-color:#f1c40f;}
+
+/* Color: Green */
+.toggle-switchy[data-color='green'] input:checked + label {background:#2ecc71;}
+.toggle-switchy[data-color='green'][data-style='rounded'] input:checked + label .toggle {border-color:#2ecc71;}
+
+/* Color: Blue */
+.toggle-switchy[data-color='blue'] input:checked + label {background:#3498db;}
+.toggle-switchy[data-color='blue'][data-style='rounded'] input:checked + label .toggle {border-color:#3498db;}
+
+/* Color: Purple */
+.toggle-switchy[data-color='purple'] input:checked + label {background:#9b59b6;}
+.toggle-switchy[data-color='purple'][data-style='rounded'] input:checked + label .toggle {border-color:#9b59b6;}
+
+/* Color: Gray */
+.toggle-switchy[data-color='gray'] input:checked + label {background:#555;}
+.toggle-switchy[data-color='gray'][data-style='rounded'] input:checked + label .toggle {border-color:#555;}
