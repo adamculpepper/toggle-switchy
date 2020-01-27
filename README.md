@@ -24,3 +24,4 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 * ~~add disable functionality~~
 
 #### See also [Toggle Radios](https://github.com/adamculpepper/toggle-radios) - A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
+
