@@ -18,6 +18,17 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 	</label>
 </div>
 ```
+
+## Options
+
+| Option | Data Attribute |
+| ------ | ------ |
+| Rounded | `data-style="rounded"`
+| No Text | `data-text="false"`
+| Sizes | `data-size="xl"`<br>`data-size="lg"`<br>medium (default)<br>`data-size="sm"`<br>`data-size="xs"`
+| Colors | `data-color="red"`<br>`data-color="orange"`<br>`data-color="yellow"`<br>`data-color="green"`<br>`data-color="blue"`<br>`data-color="purple"`<br>`data-color="gray"`
+
+
 #### Todo
 * ~~slide animation for the toggle switch~~
 * ~~fade the On/Off label in and out when clicked~~
