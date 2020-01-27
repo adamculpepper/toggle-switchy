@@ -21,7 +21,7 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 
 ## Options
 
-| Option | Attribute |
+| Option | Data Attribute |
 | ------ | ------ |
 | Rounded | `data-style="rounded"`
 | No Text | `data-text="false"`
