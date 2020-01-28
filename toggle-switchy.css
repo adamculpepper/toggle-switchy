@@ -1,5 +1,5 @@
 /*
-Toggle Switchy v1.7
+Toggle Switchy v1.8
 by Adam Culpepper | @adamculpepper
 https://github.com/adamculpepper/toggle-switchy
 */
@@ -17,16 +17,18 @@ https://github.com/adamculpepper/toggle-switchy
 .toggle-switchy input:not(:checked) + label .toggle {border:3px solid #ccc;}
 
 /* Rounded switch corners */
+.toggle-switchy input + label {border-radius:4px;}
 .toggle-switchy input + label .toggle {border-radius:6px;}
 
 /* //////////////////////////
 CORE STYLES BELOW - NO TOUCHY
 ////////////////////////// */
-.toggle-switchy {display:inline-block; overflow:hidden; border-radius:3px; position:relative; flex-shrink:0;}
+.toggle-switchy {display:inline-flex; align-items:center;}
 .toggle-switchy input {display:none;}
+.toggle-switchy input + label {overflow:hidden; position:relative; flex-shrink:0;}
 .toggle-switchy input[disabled] + label {opacity:0.5;}
-.toggle-switchy input + label {display:block; width:100%; height:100%; margin:0; cursor:pointer;}
-.toggle-switchy input + label .toggle {content:''; display:block; height:100%; position:absolute; right:0; z-index:3;}
+.toggle-switchy input + label {width:100%; height:100%; margin:0; cursor:pointer;}
+.toggle-switchy input + label .toggle {display:block; height:100%; position:absolute; right:0; z-index:3;}
 
 /* LABELS */
 .toggle-switchy input + label:before,
@@ -34,6 +36,8 @@ CORE STYLES BELOW - NO TOUCHY
 .toggle-switchy input + label:before {right:55%;}
 .toggle-switchy input + label:after {left:50%;}
 .toggle-switchy input + label:hover {cursor:pointer;}
+.toggle-switchy .label {flex-shrink:0; margin-right:10px;}
+.toggle-switchy input + label + .label {margin-left:10px; margin-right:0;}
 
 /* SHOW/HIDE */
 .toggle-switchy input + label:before {opacity:0;}
@@ -45,6 +49,7 @@ CORE STYLES BELOW - NO TOUCHY
 .toggle-switchy input + label .toggle {transition:right 200ms linear, border-color 200ms linear;}
 .toggle-switchy input + label:before,
 .toggle-switchy input + label:after {transition:all 200ms linear;}
+
 /* //////////////////////////
 CORE STYLES ABOVE - NO TOUCHY
 ////////////////////////// */
@@ -85,7 +90,7 @@ CORE STYLES ABOVE - NO TOUCHY
 .toggle-switchy[data-size='xs'] input:not(:checked) + label .toggle	{right:calc(100% - 20px);}
 
 /* Style: Rounded */
-.toggle-switchy[data-style='rounded'],
+.toggle-switchy[data-style='rounded'] label,
 .toggle-switchy[data-style='rounded'] input + label .toggle			{border-radius:50px;}
 
 .toggle-switchy[data-style='rounded'] input + label:before			{right:50%;}
