@@ -43,6 +43,9 @@ A pure CSS toggle switch for form input checkboxes
 * Screen reader friendly
 * Doesn't dump a bunch of global styles that'll screw with your other CSS
 
+## TODO
+* Better a11y (accessibility) support
+
 ## Known Issues
 * IE10 and below doesn't support the smooth slide
 
