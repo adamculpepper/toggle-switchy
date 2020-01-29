@@ -25,6 +25,7 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 | ------ | ------ |
 | Rounded | `data-style="rounded"`
 | No Text | `data-text="false"`
+| Disabled | add the `disabled` attribute to the input tag
 | Sizes | `data-size="xl"`<br>`data-size="lg"`<br>medium (default)<br>`data-size="sm"`<br>`data-size="xs"`
 | Colors | `data-color="red"`<br>`data-color="orange"`<br>`data-color="yellow"`<br>`data-color="green"`<br>`data-color="blue"`<br>`data-color="purple"`<br>`data-color="gray"`
 | Labels | `data-label="left"`<br>label on right (default)<br>
