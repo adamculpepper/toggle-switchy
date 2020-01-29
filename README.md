@@ -11,12 +11,12 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 
 ### HTML
 ```
-<div class="toggle-switchy">
+<label for="ID_HERE" class="toggle-switchy">
 	<input checked type="checkbox" id="ID_HERE">
-	<label for="ID_HERE">
-		<span class="toggle"></span>
-	</label>
-</div>
+	<span class="toggle">
+		<span class="switch"></span>
+	</span>
+</label>
 ```
 
 ## Options
@@ -27,6 +27,7 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 | No Text | `data-text="false"`
 | Sizes | `data-size="xl"`<br>`data-size="lg"`<br>medium (default)<br>`data-size="sm"`<br>`data-size="xs"`
 | Colors | `data-color="red"`<br>`data-color="orange"`<br>`data-color="yellow"`<br>`data-color="green"`<br>`data-color="blue"`<br>`data-color="purple"`<br>`data-color="gray"`
+| Labels | `data-label="left"`<br>label on right (default)<br>
 
 
 #### Todo
