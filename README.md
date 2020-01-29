@@ -2,7 +2,7 @@
 A CSS only toggle switch for form input radios (not Bootstrap dependent)
 
 ## Preview
-<img src="/assets/img/github-preview-toggly-switchy.png">
+<img src="http://adamculpepper.net/repos/preview-toggle-switchy-github.png">
 
 ## Installation
 
