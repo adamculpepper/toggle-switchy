@@ -109,28 +109,35 @@ CORE STYLES ABOVE - NO TOUCHY
 
 /* Color: Red */
 .toggle-switchy[data-color='red'] > input:checked + .toggle {background:#e74c3c;}
+.toggle-switchy[data-color='red'] > input:checked + .toggle > .switch,
 .toggle-switchy[data-color='red'][data-style='rounded'] > input:checked + .toggle > .switch {border-color:#e74c3c;}
 
 /* Color: Orange */
 .toggle-switchy[data-color='orange'] > input:checked + .toggle {background:#e67e22;}
+.toggle-switchy[data-color='orange'] > input:checked + .toggle > .switch,
 .toggle-switchy[data-color='orange'][data-style='rounded'] > input:checked + .toggle > .switch {border-color:#e67e22;}
  
  /* Color: Yellow */
 .toggle-switchy[data-color='yellow'] > input:checked + .toggle {background:#f1c40f;}
+.toggle-switchy[data-color='yellow'] > input:checked + .toggle > .switch,
 .toggle-switchy[data-color='yellow'][data-style='rounded'] > input:checked + .toggle > .switch {border-color:#f1c40f;}
 
 /* Color: Green */
 .toggle-switchy[data-color='green'] > input:checked + .toggle {background:#2ecc71;}
+.toggle-switchy[data-color='green'] > input:checked + .toggle > .switch,
 .toggle-switchy[data-color='green'][data-style='rounded'] > input:checked + .toggle > .switch {border-color:#2ecc71;}
 
 /* Color: Blue */
 .toggle-switchy[data-color='blue'] > input:checked + .toggle {background:#3498db;}
+.toggle-switchy[data-color='blue'] > input:checked + .toggle > .switch,
 .toggle-switchy[data-color='blue'][data-style='rounded'] > input:checked + .toggle > .switch {border-color:#3498db;}
 
 /* Color: Purple */
 .toggle-switchy[data-color='purple'] > input:checked + .toggle {background:#9b59b6;}
+.toggle-switchy[data-color='purple'] > input:checked + .toggle > .switch,
 .toggle-switchy[data-color='purple'][data-style='rounded'] > input:checked + .toggle > .switch {border-color:#9b59b6;}
 
 /* Color: Gray */
 .toggle-switchy[data-color='gray'] > input:checked + .toggle {background:#555;}
+.toggle-switchy[data-color='gray'] > input:checked + .toggle > .switch,
 .toggle-switchy[data-color='gray'][data-style='rounded'] > input:checked + .toggle > .switch {border-color:#555;}
