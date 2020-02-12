@@ -1,8 +1,8 @@
 # Toggle Switchy
-A CSS only toggle switch for form input radios (not Bootstrap dependent)
+A pure CSS toggle switch for form input checkboxes
 
 ## Preview
-<img src="/assets/img/github-preview-toggly-switchy.png">
+<img src="http://adamculpepper.net/repos/preview-toggle-switchy-github.png">
 
 ## Installation
 
@@ -30,11 +30,23 @@ A CSS only toggle switch for form input radios (not Bootstrap dependent)
 | Colors | `data-color="red"`<br>`data-color="orange"`<br>`data-color="yellow"`<br>`data-color="green"`<br>`data-color="blue"`<br>`data-color="purple"`<br>`data-color="gray"`
 | Labels | `data-label="left"`<br>label on right (default)<br>
 
+## Features
+* CSS only - no JavaScript!
+* No dependencies
+* Fully reponsive
+* Fully customizable
+* Fully self contained
+* 7 color schemes
+* Labels on the left and the right
+* Supports all modern browsers
+* Search engine friendly
+* Screen reader friendly
+* Doesn't dump a bunch of global styles that'll screw with your other CSS
 
-#### Todo
-* ~~slide animation for the toggle switch~~
-* ~~fade the On/Off label in and out when clicked~~
-* ~~add disable functionality~~
+## TODO
+* Better a11y (accessibility) support
+
+## Known Issues
+* IE10 and below doesn't support the smooth slide
 
 #### See also [Toggle Radios](https://github.com/adamculpepper/toggle-radios) - A CSS only toggle switch for form input checkboxes (not Bootstrap dependent)
-
