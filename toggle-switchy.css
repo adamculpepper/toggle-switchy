@@ -17,7 +17,7 @@ https://toggleswitchy.com
 .toggle-switchy > input:checked + .toggle > .switch {border:3px solid #3498db;}
 .toggle-switchy > input:not(:checked) + .toggle > .switch {border:3px solid #ccc;}
 .toggle-switchy > input:focus + .toggle,
-.toggle-switchy > input:active + .toggle {box-shadow:0 0 7px 3px rgba(0, 119, 200, 0.70);}
+.toggle-switchy > input:active + .toggle {box-shadow:0 0 5px 3px rgba(0, 119, 200, 0.50);}
 
 /* Rounded switch corners */
 .toggle-switchy > input + .toggle {border-radius:4px;}
