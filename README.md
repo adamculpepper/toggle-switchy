@@ -48,6 +48,7 @@ A pure CSS toggle switch for form input checkboxes
 * Doesn't dump a bunch of global styles that'll screw with your other CSS
 
 ## TODO
+* Add in error checking to make sure the input element is a checkbox - `input[type='checkbox']`
 * Better a11y (accessibility) support
 * Add `tabindex="0"` to the demo for keyboard accessibility instructions
 
