@@ -40,13 +40,17 @@ A pure CSS toggle switch for form input checkboxes
 * Fully self contained
 * 7 color schemes
 * Labels on the left and the right
+* Keyboard Accessible - accessibility (a11y)
+* Focus Styles - accessibility (a11y)
 * Supports all modern browsers
 * Search engine friendly
 * Screen reader friendly
 * Doesn't dump a bunch of global styles that'll screw with your other CSS
 
 ## TODO
+* Add in error checking to make sure the input element is a checkbox - `input[type='checkbox']`
 * Better a11y (accessibility) support
+* Add `tabindex="0"` to the demo for keyboard accessibility instructions
 
 ## Known Issues
 * IE10 and below doesn't support the smooth slide
