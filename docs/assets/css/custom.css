@@ -6,7 +6,6 @@ h1 {font-family:'Montserrat'; font-weight:900; font-size:3rem;}
 a {transition:background 200ms linear;}
 a:hover {text-decoration:none;}
 
-
 /* Content Styles */
 header, footer {background:#eee; padding:20px;}
 header, header a,
@@ -17,21 +16,7 @@ header a:hover, footer a:hover {color:#222; background:rgba(0, 0, 0, 0.20);}
 footer {font-size:25px;}
 footer > div {align-items:center; justify-content:center;}
 
-
 /* Sticky Footer */
 body {display:flex; flex-direction:column;}
 #content {flex:1 0 auto;}
 footer {flex-shrink:0;}
-
-
-
-
-
-
-
-
-
-
-
-
-
