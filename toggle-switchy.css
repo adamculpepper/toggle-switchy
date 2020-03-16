@@ -1,5 +1,5 @@
 /*
-Toggle Switchy v1.12
+Toggle Switchy v1.13
 by Adam Culpepper | @adamculpepper
 https://toggleswitchy.com
 */
@@ -26,7 +26,7 @@ https://toggleswitchy.com
 /* //////////////////////////
 CORE STYLES BELOW - NO TOUCHY
 ////////////////////////// */
-.toggle-switchy {display:inline-flex; align-items:center; user-select:none; position:relative;}
+.toggle-switchy {display:inline-flex; align-items:center; user-select:none; position:relative; vertical-align:middle; margin-bottom:0;}
 .toggle-switchy:hover {cursor:pointer;}
 .toggle-switchy > input {position:absolute; opacity:0;}
 .toggle-switchy > input + .toggle {align-items:center; position:relative;}
