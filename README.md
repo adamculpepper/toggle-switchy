@@ -1,4 +1,10 @@
 # Toggle Switchy
+[![Maintained](https://img.shields.io/maintenance/yes/2020?style=for-the-badge)](https://github.com/adamculpepper)
+[![Size](https://img.shields.io/github/size/adamculpepper/toggle-switchy/toggle-switchy.css?label=Size&style=for-the-badge)](https://github.com/adamculpepper/toggle-switchy/master/toggle-switchy.css)
+[![Stars](https://img.shields.io/github/stars/adamculpepper/toggle-switchy?style=for-the-badge)](https://github.com/adamculpepper/toggle-switchy/stargazers)
+[![Issues](https://img.shields.io/github/issues/adamculpepper/toggle-switchy?style=for-the-badge)](https://github.com/adamculpepper/toggle-switchy/issues)
+[![License](https://img.shields.io/github/license/adamculpepper/toggle-switchy?style=for-the-badge)](https://github.com/adamculpepper/toggle-switchy/blob/master/LICENSE)
+
 A pure CSS toggle switch for form input checkboxes
 
 ## Preview
