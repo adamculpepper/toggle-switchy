@@ -7,7 +7,8 @@ a {transition:background 200ms linear;}
 a:hover {text-decoration:none;}
 
 header .btn.btn-primary {background-color:rgba(255, 255, 255, 0.40); border:0; transition:all 200ms linear;}
-header .btn.btn-primary:hover {background-color:rgba(255, 255, 255, 0.20);}
+header .btn.btn-primary:hover,
+header .btn.btn-primary:focus {background-color:rgba(255, 255, 255, 0.20);}
 
 /* Content Styles */
 header, footer {background:#7654C4;}
