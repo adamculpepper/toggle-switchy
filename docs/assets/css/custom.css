@@ -14,8 +14,8 @@ header .btn.btn-primary:focus {background-color:rgba(255, 255, 255, 0.20);}
 header, footer {background:#7654C4;}
 header, header a,
 footer, footer a {color:#fff;}
-header a, footer a {display:inline-flex; align-items:center; justify-content:center; padding:5px 10px; background:rgba(0, 0, 0, 0.07);}
-header a:hover, footer a:hover {color:#222; background:rgba(0, 0, 0, 0.20);}
+header a, footer a {display:inline-flex; align-items:center; justify-content:center; padding:5px 10px; background:rgba(255, 255, 255, 0.10);}
+header a:hover, footer a:hover {color:#fff; background:rgba(255, 255, 255, 0.20);}
 
 footer {font-size:25px;}
 footer > div > div {align-items:center; justify-content:center;}
