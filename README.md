@@ -1,5 +1,5 @@
 # Toggle Switchy
-[![Maintained](https://img.shields.io/maintenance/yes/2020?style=for-the-badge)](https://github.com/adamculpepper)
+[![Maintained](https://img.shields.io/maintenance/yes/2021?style=for-the-badge)](https://github.com/adamculpepper)
 [![Size](https://img.shields.io/github/size/adamculpepper/toggle-switchy/toggle-switchy.css?label=Size&style=for-the-badge)](https://github.com/adamculpepper/toggle-switchy/master/toggle-switchy.css)
 [![Stars](https://img.shields.io/github/stars/adamculpepper/toggle-switchy?style=for-the-badge)](https://github.com/adamculpepper/toggle-switchy/stargazers)
 [![Issues](https://img.shields.io/github/issues/adamculpepper/toggle-switchy?style=for-the-badge)](https://github.com/adamculpepper/toggle-switchy/issues)
