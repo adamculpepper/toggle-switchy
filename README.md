@@ -8,7 +8,7 @@
 A pure CSS toggle switch for form input checkboxes
 
 ## Preview
-<img src="http://adamculpepper.net/repos/preview-toggle-switchy-github.png">
+<img src="https://raw.githubusercontent.com/adamculpepper/toggle-switchy/master/docs/preview-toggle-switchy.png">
 
 ## Installation
 
