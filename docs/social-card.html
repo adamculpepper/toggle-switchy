@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Toggle Switchy social card source</title>
+
+<!--
+	Source for the share images in docs/assets. The switches below are the real
+	component rendered from the real stylesheet, so the picture in a link preview
+	cannot drift from what the library actually produces.
+
+	To regenerate: open this file, set the size with the buttons at the top left,
+	and screenshot the card. Or drive it headless and clip to the .card element.
+	  og-image.png        1200 x 630   (og:image and twitter:image)
+	  social-preview.png  1280 x 640   (uploaded in GitHub repo settings)
+-->
+
+<link rel="stylesheet" href="../toggle-switchy.css">
+<style>
+	html, body {margin:0; padding:0; background:#e9ecef;}
+	body {font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;}
+
+	.card {
+		box-sizing:border-box;
+		width:1200px; height:630px;
+		display:flex; align-items:center; gap:56px;
+		padding:0 72px;
+		background:linear-gradient(135deg, #ffffff 0%, #f1f3f5 100%);
+		overflow:hidden;
+	}
+	.card[data-size='social-preview'] {width:1280px; height:640px;}
+
+	.card-copy {flex:0 0 470px;}
+	.card-eyebrow {
+		margin:0 0 20px; color:#3498db; font-size:19px; font-weight:700;
+		letter-spacing:0.09em; text-transform:uppercase;
+	}
+	.card-title {margin:0 0 18px; font-size:76px; line-height:1; letter-spacing:-0.03em; color:#16161a;}
+	.card-sub {margin:0 0 28px; font-size:25px; line-height:1.4; color:#5c5c66;}
+	.card-url {margin:0; font-size:20px; font-weight:600; color:#8b8b95;}
+
+	.card-art {
+		flex:1 1 auto; display:flex; flex-direction:column; gap:26px;
+		align-items:center; justify-content:center; min-width:0;
+	}
+	.card-row {display:flex; align-items:center; gap:22px;}
+	.card-art .label {font-size:19px; color:#495057;}
+</style>
+</head>
+<body>
+
+<div class="card">
+	<div class="card-copy">
+		<p class="card-eyebrow">Pure CSS &middot; No JavaScript</p>
+		<h1 class="card-title">Toggle Switchy</h1>
+		<p class="card-sub">A toggle switch for checkbox inputs. One stylesheet, no dependencies, five sizes and seven colors.</p>
+		<p class="card-url">toggleswitchy.com</p>
+	</div>
+
+	<div class="card-art">
+		<div class="card-row">
+			<label class="toggle-switchy" for="c1" data-size="xl" data-color="blue">
+				<input checked type="checkbox" id="c1">
+				<span class="toggle"><span class="switch"></span></span>
+			</label>
+			<label class="toggle-switchy" for="c2" data-size="xl" data-style="rounded" data-color="green">
+				<input checked type="checkbox" id="c2">
+				<span class="toggle"><span class="switch"></span></span>
+			</label>
+		</div>
+
+		<div class="card-row">
+			<label class="toggle-switchy" for="c3" data-size="lg" data-style="rounded" data-color="purple" data-text="false">
+				<input checked type="checkbox" id="c3">
+				<span class="toggle"><span class="switch"></span></span>
+			</label>
+			<label class="toggle-switchy" for="c4" data-size="lg" data-color="orange">
+				<input checked type="checkbox" id="c4">
+				<span class="toggle"><span class="switch"></span></span>
+			</label>
+			<label class="toggle-switchy" for="c5" data-size="lg" data-style="square" data-color="red">
+				<input type="checkbox" id="c5">
+				<span class="toggle"><span class="switch"></span></span>
+			</label>
+		</div>
+
+		<div class="card-row">
+			<label class="toggle-switchy" for="c6" data-size="lg" data-style="rounded" data-color="gray" data-text="false">
+				<input checked type="checkbox" id="c6">
+				<span class="toggle"><span class="switch"></span></span>
+				<span class="label">Labels, left or right</span>
+			</label>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
